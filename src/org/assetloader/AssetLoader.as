@@ -66,6 +66,7 @@ package org.assetloader
 				try
 				{
 					configParser.parse(this, config);
+					_onConfigLoaded.dispatch(this);
 				}
 				catch(error : Error)
 				{
@@ -251,7 +252,6 @@ package org.assetloader
 			else
 			{
 				addConfig(loader.data);
-				_onConfigLoaded.dispatch(this);
 			}
 
 			loader.destroy();

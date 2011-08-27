@@ -272,8 +272,7 @@ package org.assetloader.core
 		function get onChildComplete() : LoaderSignal
 
 		/**
-		 * Dispatches only if a URL is passed to the <code>addConfig</code> method and the config
-		 * file has finished loading.
+		 * Dispatches when the config.xml is parsed.
 		 * 
 		 * <p>HANDLER ARGUMENTS: (signal:<strong>LoaderSignal</strong>)</p>
 		 * <ul>
